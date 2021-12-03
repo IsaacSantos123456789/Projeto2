@@ -1,7 +1,8 @@
 import './UseState.css'
 import React, { useContext, useState } from "react"
-
+// propriedade juntar nomes
 import { AppContexto } from '../../data/Store'
+
 
 const UseState = props => {
 
@@ -18,8 +19,8 @@ const UseState = props => {
     return (
         <div>
             <div className="titulo">
-                <h1>useState</h1>
-                <h2>Manipula Estados em componentes funcionais</h2>
+                <h1>Propriedades</h1>
+                <h2>Uma propriedade que junta seu nome</h2>
             </div>
 
             <div className="conteudo">
@@ -47,7 +48,7 @@ const UseState = props => {
                 <button 
                     className="botao"
                     onClick={ () => alterarNomeContexto(nome) }
-                >Altera contexto (Store)</button>
+                >É assim que funciona</button>
             </div>
         </div>
     )

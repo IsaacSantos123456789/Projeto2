@@ -10,13 +10,13 @@ const Menu = props => (
                     <Link to="/">Trabalho</Link>
                 </li>
                 <li>
-                    <Link to="/UseState">useState()</Link>
+                    <Link to="/UseState">Propriedade 1</Link>
                 </li>
                 <li>
-                    <Link to="/UseEffect">useEffect()</Link>
+                    <Link to="/UseEffect">Propriedade 2</Link>
                 </li>
                 <li>
-                    <Link to="/UseContext">useContext()</Link>
+                    <Link to="/UseContext">Propriedade 3</Link>
                 </li>
             </ul>
         </nav>

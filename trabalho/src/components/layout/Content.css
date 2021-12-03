@@ -1,7 +1,7 @@
 .Content {
     display: flex;
     flex: 1;
-    background-color: black;
+    background-color:LightCyan;
     color: white;
     padding: 20px;
 }

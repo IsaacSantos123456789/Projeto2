@@ -31,11 +31,3 @@
     align-items: center;
     justify-content: center;
 }
-
-#Aprovado {
-    background-color: blue;
-}
-
-#Reprovado {
-    background-color: tomato;
-}

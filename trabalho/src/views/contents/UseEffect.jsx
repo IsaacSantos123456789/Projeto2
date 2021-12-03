@@ -1,6 +1,6 @@
 import './UseEffect.css'
 import React, { useState, useEffect } from "react"
-
+// dependendo do numero que mostra ele envia uma mensagem
 const UseEffect = props => {
 
     const [ notaFinal, setNotaFinal ] = useState(0)
@@ -37,19 +37,19 @@ const UseEffect = props => {
     console.log('\nO componente foi renderizado. \n\n')
 
     function verificaSituacao(nota) {
-        return nota >= 6 ? "Aprovado" : "Reprovado"
+        return nota >= 6 ? "Número maior que 6" : "Número menor que 6"
     }
 
     return (
         <div>
             <div className="titulo">
-                <h1>useEffect</h1>
-                <h2>Permite executar efeitos colaterais em componentes funcionais</h2>
+                <h1>De 0 a 10</h1>
+                <h2>Dependendo do número a mensagem muda</h2>
             </div>
 
             <div className="conteudo">
 
-                <label className="campo">Nota final:</label>
+                <label className="campo"></label>
                 <input
                     className="campo"
                     type="number"
@@ -59,7 +59,7 @@ const UseEffect = props => {
                     onChange={ e => setNotaFinal(e.target.value) }
                 />
 
-                <label className="campo">Situação:</label>
+                <label className="campo"></label>
                 <p className="mensagem"id={situacao}>{situacao}</p>
             </div>
         </div>
